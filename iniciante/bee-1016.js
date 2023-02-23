@@ -1,4 +1,4 @@
-var input = require('fs').readFileSync('/home/lleandrok5/Documentos/MeusProjetos/beecrowd-problemas/iniciante/stdin', 'utf8');
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
 
 let distancia = parseInt(lines.shift())
