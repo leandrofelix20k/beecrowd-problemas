@@ -2,9 +2,10 @@ var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
 
 let valor = parseInt(lines.shift())
-let valorPrint = valor
 
 let cedulas = {cem: 0, cinquenta: 0, vinte: 0, dez: 0, cinco: 0, dois: 0, um: 0}
+
+console.log(valor)
 
 while(true){
     if (valor >= 100){
@@ -32,7 +33,7 @@ while(true){
         break
     }
 }
-console.log(valorPrint)
+
 console.log(`${cedulas.cem} nota(s) de R$ 100,00`)
 console.log(`${cedulas.cinquenta} nota(s) de R$ 50,00`)
 console.log(`${cedulas.vinte} nota(s) de R$ 20,00`)
