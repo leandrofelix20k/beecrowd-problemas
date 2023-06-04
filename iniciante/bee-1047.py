@@ -23,4 +23,7 @@ elif(minutoInicial > minutoFinal):
 elif(minutoInicial < minutoFinal):
     duracaoMinutos = minutoFinal - minutoInicial
 
+if(duracaoHoras == 24 and duracaoMinutos > 0):
+    duracaoHoras = 0
+
 print('O JOGO DUROU {} HORA(S) E {} MINUTO(S)'.format(duracaoHoras, duracaoMinutos))
