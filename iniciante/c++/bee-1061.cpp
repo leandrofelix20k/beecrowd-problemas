@@ -1,17 +1,15 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main(){
 
-    string str;
+    std::string str;
     int dI, dF, hI, hF, mI, mF, sI, sF, dT, hT, mT, sT;
 
-    cin >> str >> dI;
-    cin >> hI >> str >> mI >> str >> sI;
-    cin >> str >> dF;
-    cin >> hF >> str >> mF >> str >> sF;
+    std::cin >> str >> dI;
+    std::cin >> hI >> str >> mI >> str >> sI;
+    std::cin >> str >> dF;
+    std::cin >> hF >> str >> mF >> str >> sF;
 
     dT = dF - dI;
     hT = hF - hI;
@@ -33,10 +31,10 @@ int main(){
         dT--;
     }
 
-    cout << dT << " dia(s)" << endl;
-    cout << hT << " hora(s)" << endl;
-    cout << mT << " minuto(s)" << endl;
-    cout << sT << " segundo(s)" << endl;
+    std::cout << dT << " dia(s)" << std::endl;
+    std::cout << hT << " hora(s)" << std::endl;
+    std::cout << mT << " minuto(s)" << std::endl;
+    std::cout << sT << " segundo(s)" << std::endl;
 
     return 0;
 }
